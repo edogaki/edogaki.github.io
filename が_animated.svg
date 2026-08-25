@@ -36,15 +36,15 @@ stroke-drawing animation.
     stroke-dasharray: 1;
     stroke-dashoffset: 1;
     animation-name: draw-stroke;
-    animation-duration: 0.55s;
+    animation-duration: 0.25s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
   }
-  #s1 { animation-delay: 6.00s; }
-  #s2 { animation-delay: 6.60s; }
-  #s3 { animation-delay: 7.20s; }
-  #s4 { animation-delay: 7.80s; }
-  #s5 { animation-delay: 8.40s; }
+  #s1 { animation-delay: 3.00s; }
+  #s2 { animation-delay: 3.30s; }
+  #s3 { animation-delay: 3.60s; }
+  #s4 { animation-delay: 3.90s; }
+  #s5 { animation-delay: 4.20s; }
   @keyframes draw-stroke {
     from { stroke-dashoffset: 1; }
     to   { stroke-dashoffset: 0; }
