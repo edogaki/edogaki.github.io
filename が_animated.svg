@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright (C) 2009/2010/2011 Ulrich Apel.
+
+This work is based on KanjiVG data by Ulrich Apel.
+KanjiVG: http://kanjivg.tagaini.net
+
+This work is distributed under the conditions of the Creative Commons
+Attribution-Share Alike 3.0 Licence.
+
+This means you are free:
+* to Share — to copy, distribute and transmit the work
+* to Remix — to adapt the work
+
+Under the following conditions:
+* Attribution. You must attribute your use of KanjiVG in
+  your own copyright header and link to the KanjiVG website.
+* Share Alike. If you alter, transform, or build upon this work,
+  you may distribute the resulting work only under the same
+  or similar licence to this one.
+
+See http://creativecommons.org/licenses/by-sa/3.0/ for more details.
+
+This SVG has been modified from the original KanjiVG data by adding
+stroke-drawing animation.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="109" height="109" viewBox="0 0 109 109">
+
+<style>
+  .stroke {
+    fill: none;
+    stroke: #000000;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    animation-name: draw-stroke;
+    animation-duration: 0.55s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  #s1 { animation-delay: 6.00s; }
+  #s2 { animation-delay: 6.60s; }
+  #s3 { animation-delay: 7.20s; }
+  #s4 { animation-delay: 7.80s; }
+  #s5 { animation-delay: 8.40s; }
+  @keyframes draw-stroke {
+    from { stroke-dashoffset: 1; }
+    to   { stroke-dashoffset: 0; }
+  }
+</style>
+
+<g id="kanji-strokes">
+  <path id="s1" class="stroke" pathLength="1" d="M24.62,38.62c1.88,1.62,4.65,2.33,8.62,1c25.5-8.5,29.5-4.13,29.5,7.62c0,9.38-1.24,17.46-4.25,25.25c-7.62,19.76-10.87,17.39-16.12,10.89"/>
+  <path id="s2" class="stroke" pathLength="1" d="M48.5,17.5c1,1.38,1.29,4.7,0.5,7.12c-5,15.25-18.02,40.93-19.62,43.88c-3.12,5.75-6.38,11.88-9.38,16.25"/>
+  <path id="s3" class="stroke" pathLength="1" d="M77.37,31.62c7.5,6.88,13.25,15.75,15,24.88"/>
+  <path id="s4" class="stroke" pathLength="1" d="M80.5,18.25c2.75,1.75,6,5.38,7.75,8.5"/>
+  <path id="s5" class="stroke" pathLength="1" d="M86.87,13.38c3.06,1.57,6.68,4.82,8.62,7.62"/>
+</g>
+</svg>

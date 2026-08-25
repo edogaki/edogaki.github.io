@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="109"
+    height="109"
+    viewBox="0 0 109 109">
+
+    <style>
+        .stroke {
+            fill: none;
+            stroke: #000;
+            stroke-width: 3;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+
+            /*
+             * pathLength="1" makes every stroke behave as
+             * though its total length is exactly 1.
+             */
+            stroke-dasharray: 1;
+            stroke-dashoffset: 1;
+
+            animation:
+                draw-stroke 0.55s ease-in-out forwards;
+        }
+
+        /*
+         * Each stroke starts after the previous one finishes.
+         */
+        #s1 { animation-delay: 0s; }
+        #s2 { animation-delay: 0.55s; }
+        #s3 { animation-delay: 1.10s; }
+        #s4 { animation-delay: 1.65s; }
+        #s5 { animation-delay: 2.20s; }
+        #s6 { animation-delay: 2.75s; }
+
+        @keyframes draw-stroke {
+            from {
+                stroke-dashoffset: 1;
+            }
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+    </style>
+
+    <!-- 江 -->
+    <g id="kanji">
+
+        <!-- 氵 -->
+        <g id="water">
+
+            <!-- Stroke 1 -->
+            <path
+                id="s1"
+                class="stroke"
+                pathLength="1"
+                d="M21.76,19.88
+                   c4.94,1.71,12.75,7.05,13.99,9.72"/>
+
+            <!-- Stroke 2 -->
+            <path
+                id="s2"
+                class="stroke"
+                pathLength="1"
+                d="M15.75,41.75
+                   c4.59,1.59,11.85,6.53,13,9"/>
+
+            <!-- Stroke 3 -->
+            <path
+                id="s3"
+                class="stroke"
+                pathLength="1"
+                d="M14.02,88.62
+                   c1.39,0.58,2.83,0.38,3.67-0.81
+                   C20.71,83.5,27,72.99,29.75,67.5"/>
+
+        </g>
+
+        <!-- 工 -->
+        <g id="work">
+
+            <!-- Stroke 4 -->
+            <path
+                id="s4"
+                class="stroke"
+                pathLength="1"
+                d="M44.26,36.06
+                   c2.74,0.56,5.66,0.47,7.69,0.18
+                   c6.86,-0.97,20.58,-3.25,27.54,-4
+                   c1.9,-0.21,4.38,-0.12,6.14,0.21"/>
+
+            <!-- Stroke 5 -->
+            <path
+                id="s5"
+                class="stroke"
+                pathLength="1"
+                d="M64.1,37.12
+                   c1.08,1.08,1.32,2.51,1.32,5.23
+                   c0,10.16,-0.05,28.59,-0.05,37.03"/>
+
+            <!-- Stroke 6 -->
+            <path
+                id="s6"
+                class="stroke"
+                pathLength="1"
+                d="M34.77,82.59
+                   c2.61,1.03,6.42,0.82,9.11,0.46
+                   c13.62,-1.81,28.24,-3.43,42.99,-4.45
+                   c2.59,-0.18,6.16,-0.01,8.6,1.1"/>
+
+        </g>
+    </g>
+</svg>
